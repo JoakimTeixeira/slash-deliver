@@ -23,7 +23,7 @@ public class ProductService {
 //	Annotation to prevent write lock in the database (increases transaction speed)
 	@Transactional(readOnly = true)
 	public List<ProductDTO> findAll() {
-		List<Product> list = repository.findAll();
+		List<Product> list = repository.findAllByOrderByNameAsc();
 		return list.stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
 	}
 }
