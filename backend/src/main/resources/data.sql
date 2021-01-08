@@ -1,0 +1,32 @@
+INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Bacon Pizza', 49.9, 'https://raw.githubusercontent.com/JoakimTeixeira/slash-deliver/main/backend/src/assets/bacon_pizza.jpg', 'Bacon pizza with mozzarella, oregano, special sauce and house seasoning.');
+INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('House-style Pizza', 59.9, 'https://raw.githubusercontent.com/JoakimTeixeira/slash-deliver/main/backend/src/assets/house_pizza.jpg', 'House-style pizza, with special sauce and all basic ingredients, and cheese of your choice.');
+INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Portuguese Pizza', 45.0, 'https://raw.githubusercontent.com/JoakimTeixeira/slash-deliver/main/backend/src/assets/portuguese_pizza.jpg', 'Portuguese pizza with special sauce, mozzarella, ham, eggs and spices.');
+INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Meat Risotto', 52.0, 'https://raw.githubusercontent.com/JoakimTeixeira/slash-deliver/main/backend/src/assets/meat_risotto.jpg', 'Spiced meat risotto with a delicious accompanying sauce.');
+INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Mushroom Risotto', 59.95, 'https://raw.githubusercontent.com/JoakimTeixeira/slash-deliver/main/backend/src/assets/mushroom_risotto.jpg', 'Mushroom risotto made with fine ingredients and the chefs special touch.');
+INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Spaghetti Pasta', 35.9, 'https://raw.githubusercontent.com/JoakimTeixeira/slash-deliver/main/backend/src/assets/spaghetti_pasta.jpg', 'Fresh spaghetti pasta with special sauce and house seasoning.');
+INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Fusilli Pasta', 38.0, 'https://raw.githubusercontent.com/JoakimTeixeira/slash-deliver/main/backend/src/assets/fusilli_pasta.jpg', 'Spiced fusilli pasta with chefs touch');
+INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Penne Pasta', 37.9, 'https://raw.githubusercontent.com/JoakimTeixeira/slash-deliver/main/backend/src/assets/penne_pasta.jpg', 'Fresh al dente penne pasta with special seasoning.');
+
+INSERT INTO tb_order (status, latitude, longitude, address, moment) VALUES (0, 49.88980360135179, -97.13934043176046, '155 Smith St, Winnipeg', TIMESTAMP WITH TIME ZONE '2021-01-08T10:00:00Z');
+INSERT INTO tb_order (status, latitude, longitude, address, moment) VALUES (1, 49.88980360135179, -97.13934043176046, '155 Smith St, Winnipeg', TIMESTAMP WITH TIME ZONE '2021-01-08T15:00:00Z');
+INSERT INTO tb_order (status, latitude, longitude, address, moment) VALUES (0, 49.88980360135179, -97.13934043176046, '155 Smith St, Winnipeg', TIMESTAMP WITH TIME ZONE '2021-01-08T16:00:00Z');
+INSERT INTO tb_order (status, latitude, longitude, address, moment) VALUES (0, 49.88980360135179, -97.13934043176046, '155 Smith St, Winnipeg', TIMESTAMP WITH TIME ZONE '2021-01-08T12:00:00Z');
+INSERT INTO tb_order (status, latitude, longitude, address, moment) VALUES (1, 49.88980360135179, -97.13934043176046, '155 Smith St, Winnipeg', TIMESTAMP WITH TIME ZONE '2021-01-08T08:00:00Z');
+INSERT INTO tb_order (status, latitude, longitude, address, moment) VALUES (0, 49.88980360135179, -97.13934043176046, '155 Smith St, Winnipeg', TIMESTAMP WITH TIME ZONE '2021-01-08T14:00:00Z');
+INSERT INTO tb_order (status, latitude, longitude, address, moment) VALUES (0, 49.88980360135179, -97.13934043176046, '155 Smith St, Winnipeg', TIMESTAMP WITH TIME ZONE '2021-01-08T09:00:00Z');
+
+INSERT INTO tb_order_product (order_id, product_id) VALUES (1 , 1);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (1 , 4);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (2 , 2);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (2 , 5);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (2 , 8);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (3 , 3);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (3 , 4);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (4 , 2);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (4 , 6);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (5 , 4);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (5 , 6);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (6 , 5);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (6 , 1);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (7 , 7);
+INSERT INTO tb_order_product (order_id, product_id) VALUES (7 , 5);
